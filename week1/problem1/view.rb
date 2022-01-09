@@ -1,4 +1,4 @@
-def problem1_menu(total_elements, alphabetical_increase)
+def view(total_elements, alphabetical_increase)
   title()
   elements = asked_for_elements(total_elements)
   response(alphabetical_increase, elements)
