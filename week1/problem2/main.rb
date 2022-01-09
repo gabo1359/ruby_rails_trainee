@@ -11,6 +11,6 @@ class Array
   end
 end
 
-# Testing our new method for Array class
+# Testing our new method for an Array class instance
 test_array = [1, 4, 2, 2, 2, 3, 3, 1, 1, 2, 4, 2, 3, 3, 3, 3]
 view(test_array)
