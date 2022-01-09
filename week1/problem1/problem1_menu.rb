@@ -18,7 +18,7 @@ def asked_for_elements(total_elements)
   elements = gets.chomp.to_i
   while elements <= 0 || elements > total_elements
     puts
-    puts "Incorrect. Write a number between 1 and #{total_elements}:"
+    puts "Incorrect! Write a number between 1 and #{total_elements}:"
     print ">> "
     elements = gets.chomp.to_i
   end
