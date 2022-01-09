@@ -1,5 +1,8 @@
-require_relative './view.rb'
+# frozen_string_literal: false
 
+require_relative './view'
+
+# Service to download ftp files from the server
 class Array
   def to_histogram
     hash = Hash.new(0)
