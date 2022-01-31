@@ -36,7 +36,7 @@ end
   days = rand(1..23)
   Order.create({
     date: "2022-01-#{days < 10 ? "0#{days}" : days}",
-    customer_id: rand(1..10),
+    customer_id: rand(1..10), # Customer.pluck(:id)
     total: rand(100..999),
     status: ['delivered', 'undelivered'][rand(0..1)]
   })
@@ -44,8 +44,8 @@ end
 
 15.times do |i|
   OrderLine.create({
-    order_id: rand(1..10),
-    product_id: rand(1..20),
+    order_id: rand(1..10), # Order.pluck(:id)
+    product_id: rand(1..20), # Product.pluck(:id)
     quantity: rand(1..5),
     price: rand(10..100),
     total: rand(100..999)

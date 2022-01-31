@@ -18,6 +18,6 @@ class Product < ApplicationRecord
   # TEST -> Product.most_purchased
 
   # Search product that contains words greater than two letters
-  scope :large_name, -> { all.select { |item| item.name.length > 2 } }
+  scope :large_name, -> { all.select { |item| item.name.length > 2 } } # where.('name LIKE ?', '__%')
   # TEST -> Product.large_name
 end

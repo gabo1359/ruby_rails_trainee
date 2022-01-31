@@ -38,6 +38,7 @@ HAVING products.name = 'Google Pixel 5';
 -- 7) Update a Product price by 1.5
 SELECT * FROM products WHERE id = 10;
 UPDATE products SET price = (SELECT price FROM products WHERE id = 10) * 1.5;
+-- UPDATE products SET price = price * 1.5 WHERE id = 10;
 SELECT * FROM products WHERE id = 10;
 
 -- 8) Select All the customers who bought an X product
