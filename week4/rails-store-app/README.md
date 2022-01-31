@@ -1,4 +1,4 @@
-# Rail Store App
+# Rails Store App
 
 ## Installation
 
